@@ -1,0 +1,57 @@
+.h3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.td {
+    font-weight: bold;
+}
+
+.td-alamat {
+    vertical-align: top;
+    font-weight: bold;
+}
+
+.h4 {
+    padding-top: 30px;
+}
+
+.email {
+    width: 60px;
+    font-size: 36px;
+    color: black;
+}
+
+.iconsts {
+    width: 60px;
+    font-size: 36px;
+    color: green;
+}
+
+.p-1 {
+    margin-top: 30px;
+}
+
+.text {
+    text-align: justify;
+}
+
+.media {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.sosial {
+    margin-left: 80px;
+}
+
+.a-link {
+    font-size: 50px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.img {
+    margin-left: 50px;
+    width: 270px;
+}
