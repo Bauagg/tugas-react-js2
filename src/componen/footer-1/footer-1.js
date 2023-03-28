@@ -139,29 +139,31 @@ const Date = () => {
             <h3 className="h3">informasi</h3>
             <h4>Tentang Kami</h4>
             <table className="tabel">
-                <tr>
-                    <td className="td">Nama</td>
-                    <td>: hdfgh</td>
-                </tr>
-                <tr>
-                    <td className="td-alamat">Alamat</td>
-                    <td> : Bangeran, Dukun, Gresik, Jawa Timur, Indonesia</td>
-                </tr>
-                <tr>
-                    <td className="td">Jenis</td>
-                    <td>: delivery / cetryn</td>
-                </tr>
-                <tr>
-                    <td colSpan={3}><h4 className="h4">Customer Service</h4></td>
-                </tr>
-                <tr>
-                    <td><a href="" className="icon-link"><BsFillEnvelopeFill className="email" /></a></td>
-                    <td>: eduwork@gmail.com</td>
-                </tr>
-                <tr>
-                    <td><a href="" className="icon-link"><FaWhatsapp className="iconsts" /></a></td>
-                    <td>: 0853784898</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td className="td">Nama</td>
+                        <td>: hdfgh</td>
+                    </tr>
+                    <tr>
+                        <td className="td-alamat">Alamat</td>
+                        <td> : Bangeran, Dukun, Gresik, Jawa Timur, Indonesia</td>
+                    </tr>
+                    <tr>
+                        <td className="td">Jenis</td>
+                        <td>: delivery / cetryn</td>
+                    </tr>
+                    <tr>
+                        <td colSpan={3}><h4 className="h4">Customer Service</h4></td>
+                    </tr>
+                    <tr>
+                        <td><a href="" className="icon-link"><BsFillEnvelopeFill className="email" /></a></td>
+                        <td>: eduwork@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><a href="" className="icon-link"><FaWhatsapp className="iconsts" /></a></td>
+                        <td>: 0853784898</td>
+                    </tr>
+                </tbody>
             </table>
             <h4 className="p-1">Description</h4>
             <p className="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,

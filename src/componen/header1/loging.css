@@ -1,0 +1,23 @@
+.loging {
+    margin-top: 100px;
+}
+
+.container-log {
+    width: 500px;
+    z-index: 9999px;
+    border: 4px solid rgb(58, 231, 145);
+    border-radius: 20%;
+    padding: 40px;
+    position: fixed;
+    z-index: 3;
+    background-color: aliceblue;
+    margin-left: 550px;
+}
+
+.log-h1 {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}

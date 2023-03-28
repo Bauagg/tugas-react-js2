@@ -1,8 +1,8 @@
 import "./App.css"
-import Header from "./componen/header1/header -1";
 import ColorSchemesExample from "./componen/navbar-1/navbar";
 import { BasicExample, Date } from "./componen/footer-1/footer-1";
 import { DiAndroid, DiWindows } from "react-icons/di";
+import Header from "./componen/header1/header1";
 
 
 function App() {
@@ -10,13 +10,8 @@ function App() {
   return (
     <div>
       <ColorSchemesExample />
-      <Header />
-
-      <div className="Form-search">
-        <div className="input-group">
-          <input type="search" className="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon" />
-          <button type="submit" className="btn-sum">Submit</button>
-        </div>
+      <div>
+        <Header />
       </div>
 
       <div className="container-2">

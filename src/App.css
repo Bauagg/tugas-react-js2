@@ -1,6 +1,7 @@
 .Form-search {
   border-radius: 10px;
-  margin: -50px auto;
+  margin: auto;
+  margin-bottom: 0;
   width: 1000px;
   padding: 40px 160px;
   background-color: rgb(218, 229, 250);
@@ -15,24 +16,22 @@
 }
 
 .container-2 {
-  margin: 125px;
+  margin: 90px;
   align-items: center;
 }
 
 .bagian1 {
-  width: 925px;
+  width: 1000px;
   box-sizing: border-box;
   display: inline-block;
-}
-
-.bagian1 h2 {
-  padding-top: 40px;
+  justify-content: center;
 }
 
 .bagian1 h2 {
   text-align: center;
   margin-bottom: 20px;
   font-family: 'Edu NSW ACT Foundation', cursive;
+  padding-top: 40px;
 }
 
 .bagian2 {
@@ -54,7 +53,7 @@
 }
 
 .ahir {
-  margin-top: -60px;
+  margin-top: 60px;
   background-color: #004b96;
   text-align: center;
   height: 100px;
