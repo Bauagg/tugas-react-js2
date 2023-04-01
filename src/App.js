@@ -16,7 +16,6 @@ function App() {
 
       <div className="container-2">
         <div className="bagian1">
-          <h2>Menu Makanan</h2>
           <BasicExample />
         </div>
 

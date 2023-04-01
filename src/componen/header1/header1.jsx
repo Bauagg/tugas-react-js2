@@ -4,6 +4,7 @@ import Loging from './loging';
 
 
 
+
 const Header = () => {
     const [log, setLog] = useState(false)
 
@@ -30,12 +31,6 @@ const Header = () => {
                 <button type="submit" className="btn-1">Daftar</button>
             </div>
 
-            <div className="Form-search">
-                <div className="input-group">
-                    <input type="search" className="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon" />
-                    <button type="submit" className="btn-sum">Submit</button>
-                </div>
-            </div>
         </div>
     )
 }

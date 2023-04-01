@@ -3,130 +3,56 @@ import { Card, Button, Row, Col, Container } from "react-bootstrap";
 import { BsFillEnvelopeFill } from "react-icons/bs";
 import { FaWhatsapp as FaWhatsapp } from 'react-icons/fa';
 import { FiYoutube, FiInstagram, FiFacebook, FiTwitter } from "react-icons/fi";
+import { ApiBrita } from "./api";
+import { useEffect, useState } from "react";
 
 
 function BasicExample() {
+    const [datas, setDatas] = useState([])
+    const [user, setUser] = useState(" ")
+
+    useEffect(() => {
+        ApiBrita()
+            .then((e) => setDatas(e))
+    }, [])
+
+
+    const hendelForm = async () => {
+        setDatas(await ApiBrita(user))
+    }
+
+
     return (
         <div>
+
+            <div className="Form-search">
+                <div className="input-group">
+                    <input type="search" className="form-control" placeholder="search" aria-label="Username"
+                        aria-describedby="basic-addon " name="user" onChange={(e) => setUser(e.target.value)} />
+                    <button type="submit" className="btn-sum" onClick={hendelForm}>Submit</button>
+                </div>
+            </div >
             <Container>
-                <Row md={3}>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://katasumbar.com/wp-content/uploads/2022/06/043061400_1600750232-shutterstock_1786027046-1024x576.webp" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://akcdn.detik.net.id/visual/2020/11/26/ilustrasi-nasi-goreng-1_169.jpeg?w=650&q=90" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://chemilan.com.my/wp-content/uploads/2020/03/nasi-lemak-featured-1024x576.jpg" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://navahoteltawangmangu.com/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-28-at-5.26.43-PM-1024x576.jpeg" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://dmm0a91a1r04e.cloudfront.net/RDqr2sSIk78oW6oAoiwARv0Rx6w=/1024x576/https%3A%2F%2Fkompas.id%2Fwp-content%2Fuploads%2F2018%2F10%2F71885960_1540651106.jpg" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://www.gresiksatu.com/wp-content/uploads/2022/08/8C3FD071-167E-42AC-AA3D-23627B9455DD-1024x576.jpeg" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaeGNb2g9p4e7UGuPqoCYH0x0vEYDR-liWPg&usqp=CAU" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://hariane.com/file/2022/07/4-makanan-rendah-kalori-untuk-diet-tak-disangka-mi-ini-salah-satunya.-Foto-Pexels-Lisa-1024x576.webp" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="https://ceknricek.tv/wp-content/uploads/2023/02/mieayam-1024x576.jpg" />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                    Some quick example text to build on the card title and make up the
-                                    bulk of the card's content.
-                                </Card.Text>
-                                <Button variant="primary">Buy Food</Button>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                <h2>Mencari Brita</h2>
+                <Row md={2}>
+
+                    {
+                        datas.map((index) => {
+                            return (
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" key={index.id} src={index.urlToImage} />
+                                    <Card.Body>
+                                        <Card.Title key={index.id}>{index.title}</Card.Title>
+                                        <Card.Text key={index.id}>
+                                            {index.description}
+                                        </Card.Text>
+                                        <Button variant="primary">Buy Food</Button>
+                                    </Card.Body>
+                                </Card>
+                            )
+                        })
+                    }
+
                 </Row>
             </Container>
         </div>
